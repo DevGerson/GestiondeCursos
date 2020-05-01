@@ -136,18 +136,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AsigAlumnos.cpp" />
+    <ClCompile Include="AsigCatedraticos.cpp" />
+    <ClCompile Include="AsigSalones.cpp" />
     <ClCompile Include="CConexion.cpp" />
     <ClCompile Include="FrmPrincipal.cpp" />
+    <ClCompile Include="NuevoCursos.cpp" />
+    <ClCompile Include="NuevosAlumnos.cpp" />
+    <ClCompile Include="NuevosCatedraticos.cpp" />
+    <ClCompile Include="NuevosSalones.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AsigAlumnos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AsigCatedraticos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AsigSalones.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="CConexion.h" />
     <ClInclude Include="FrmPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="NuevoCursos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="NuevosAlumnos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="NuevosCatedraticos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="NuevosSalones.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevosAlumnos.resx">
+      <DependentUpon>NuevosAlumnos.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

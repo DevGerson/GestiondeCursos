@@ -1,5 +1,7 @@
 #pragma once
 #include "CConexion.h"
+#include "NuevosAlumnos.h"
+#include "NuevosCatedraticos.h"
 
 namespace GestionCursosNet {
 
@@ -37,6 +39,7 @@ namespace GestionCursosNet {
 		}
 	private: System::Windows::Forms::Button^  button1;
 	private: System::Windows::Forms::DataGridView^  gv_datos;
+	private: System::Windows::Forms::Button^  button2;
 	protected:
 
 	private:
@@ -54,13 +57,14 @@ namespace GestionCursosNet {
 		{
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->gv_datos = (gcnew System::Windows::Forms::DataGridView());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->gv_datos))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// button1
 			// 
 			this->button1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
-			this->button1->Location = System::Drawing::Point(197, 226);
+			this->button1->Location = System::Drawing::Point(843, 463);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
 			this->button1->TabIndex = 0;
@@ -76,14 +80,25 @@ namespace GestionCursosNet {
 			this->gv_datos->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->gv_datos->Location = System::Drawing::Point(12, 12);
 			this->gv_datos->Name = L"gv_datos";
-			this->gv_datos->Size = System::Drawing::Size(260, 195);
+			this->gv_datos->Size = System::Drawing::Size(906, 432);
 			this->gv_datos->TabIndex = 1;
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(762, 463);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->TabIndex = 2;
+			this->button2->Text = L"Abrir";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &FrmPrincipal::button2_Click);
 			// 
 			// FrmPrincipal
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(284, 261);
+			this->ClientSize = System::Drawing::Size(930, 498);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->gv_datos);
 			this->Controls->Add(this->button1);
 			this->Name = L"FrmPrincipal";
@@ -110,5 +125,9 @@ namespace GestionCursosNet {
 #pragma endregion
 
 
-	};
+	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+		NuevosCatedraticos^ alumno = gcnew NuevosCatedraticos();
+		alumno->Show();
+	}
+};
 }
