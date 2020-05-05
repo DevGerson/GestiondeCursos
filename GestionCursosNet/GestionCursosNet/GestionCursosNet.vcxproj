@@ -126,12 +126,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -145,6 +151,7 @@
     <ClCompile Include="NuevosAlumnos.cpp" />
     <ClCompile Include="NuevosCatedraticos.cpp" />
     <ClCompile Include="NuevosSalones.cpp" />
+    <ClCompile Include="NuevosTipoCurso.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AsigAlumnos.h">
@@ -172,13 +179,25 @@
     <ClInclude Include="NuevosSalones.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="NuevosTipoCurso.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NuevoCursos.resx">
+      <DependentUpon>NuevoCursos.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NuevosAlumnos.resx">
       <DependentUpon>NuevosAlumnos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevosCatedraticos.resx">
+      <DependentUpon>NuevosCatedraticos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevosTipoCurso.resx">
+      <DependentUpon>NuevosTipoCurso.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
