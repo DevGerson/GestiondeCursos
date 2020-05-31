@@ -136,22 +136,57 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="XanderUI">
+      <HintPath>..\..\..\XanderUI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AsigAlumnos.cpp" />
     <ClCompile Include="AsigCatedraticos.cpp" />
+    <ClCompile Include="AsigMenu.cpp" />
     <ClCompile Include="AsigSalones.cpp" />
+    <ClCompile Include="CadenaConexion.cpp" />
     <ClCompile Include="CConexion.cpp" />
+    <ClCompile Include="ClassAsgAlumno.cpp" />
+    <ClCompile Include="ClassAsgCatedratico.cpp" />
+    <ClCompile Include="ClassAsgSalon.cpp" />
+    <ClCompile Include="ClassCentroCosto.cpp" />
+    <ClCompile Include="ClassCurso.cpp" />
+    <ClCompile Include="ClassDepartamento.cpp" />
+    <ClCompile Include="ClassExpAlumno.cpp" />
+    <ClCompile Include="ClassExpCatedratico.cpp" />
+    <ClCompile Include="ClassInstitucion.cpp" />
+    <ClCompile Include="ClassSalon.cpp" />
+    <ClCompile Include="ClassTipoCurso.cpp" />
+    <ClCompile Include="ExpAlumno.cpp" />
+    <ClCompile Include="ExpCatedratico.cpp" />
+    <ClCompile Include="ExpMenu.cpp" />
     <ClCompile Include="FrmPrincipal.cpp" />
+    <ClCompile Include="FuncionesGenerales.cpp" />
+    <ClCompile Include="NuevoCentroCosto.cpp" />
     <ClCompile Include="NuevoCursos.cpp" />
+    <ClCompile Include="NuevoDepartamento.cpp" />
+    <ClCompile Include="NuevoInstitucion.cpp" />
     <ClCompile Include="NuevosAlumnos.cpp" />
     <ClCompile Include="NuevosCatedraticos.cpp" />
     <ClCompile Include="NuevosSalones.cpp" />
     <ClCompile Include="NuevosTipoCurso.cpp" />
+    <ClCompile Include="ReporteAlumno.cpp" />
+    <ClCompile Include="ReporteAsgAlumno.cpp" />
+    <ClCompile Include="ReporteAsgCatedratico.cpp" />
+    <ClCompile Include="ReporteAsgSalon.cpp" />
+    <ClCompile Include="ReporteCatedratico.cpp" />
+    <ClCompile Include="ReporteCentroCosto.cpp" />
+    <ClCompile Include="ReporteCurso.cpp" />
+    <ClCompile Include="ReporteDepartamento.cpp" />
+    <ClCompile Include="ReporteMenu.cpp" />
+    <ClCompile Include="ReporteSalon.cpp" />
+    <ClCompile Include="ReporteTipoCurso.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AsigAlumnos.h">
@@ -160,14 +195,48 @@
     <ClInclude Include="AsigCatedraticos.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="AsigMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="AsigSalones.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="CadenaConexion.h" />
     <ClInclude Include="CConexion.h" />
+    <ClInclude Include="ClassAsgAlumno.h" />
+    <ClInclude Include="ClassAsgCatedratico.h" />
+    <ClInclude Include="ClassAsgSalon.h" />
+    <ClInclude Include="ClassCentroCosto.h" />
+    <ClInclude Include="ClassCurso.h" />
+    <ClInclude Include="ClassDepartamento.h" />
+    <ClInclude Include="ClassExpAlumno.h" />
+    <ClInclude Include="ClassExpCatedratico.h" />
+    <ClInclude Include="ClassInstitucion.h" />
+    <ClInclude Include="ClassSalon.h" />
+    <ClInclude Include="ClassTipoCurso.h" />
+    <ClInclude Include="ExpAlumno.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ExpCatedratico.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ExpMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="FrmPrincipal.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="FuncionesGenerales.h" />
+    <ClInclude Include="NuevoCentroCosto.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="NuevoCursos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="NuevoDepartamento.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="NuevoInstitucion.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="NuevosAlumnos.h">
@@ -182,13 +251,76 @@
     <ClInclude Include="NuevosTipoCurso.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="ReporteAlumno.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReporteAsgAlumno.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReporteAsgCatedratico.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReporteAsgSalon.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReporteCatedratico.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReporteCentroCosto.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReporteCurso.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReporteDepartamento.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReporteMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReporteSalon.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReporteTipoCurso.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AsigAlumnos.resx">
+      <DependentUpon>AsigAlumnos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsigCatedraticos.resx">
+      <DependentUpon>AsigCatedraticos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsigMenu.resx">
+      <DependentUpon>AsigMenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsigSalones.resx">
+      <DependentUpon>AsigSalones.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpAlumno.resx">
+      <DependentUpon>ExpAlumno.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpCatedratico.resx">
+      <DependentUpon>ExpCatedratico.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpMenu.resx">
+      <DependentUpon>ExpMenu.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NuevoCentroCosto.resx">
+      <DependentUpon>NuevoCentroCosto.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NuevoCursos.resx">
       <DependentUpon>NuevoCursos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoDepartamento.resx">
+      <DependentUpon>NuevoDepartamento.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoInstitucion.resx">
+      <DependentUpon>NuevoInstitucion.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NuevosAlumnos.resx">
       <DependentUpon>NuevosAlumnos.h</DependentUpon>
@@ -196,9 +328,27 @@
     <EmbeddedResource Include="NuevosCatedraticos.resx">
       <DependentUpon>NuevosCatedraticos.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NuevosSalones.resx">
+      <DependentUpon>NuevosSalones.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NuevosTipoCurso.resx">
       <DependentUpon>NuevosTipoCurso.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCurso.resx">
+      <DependentUpon>ReporteCurso.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteDepartamento.resx">
+      <DependentUpon>ReporteDepartamento.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteMenu.resx">
+      <DependentUpon>ReporteMenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteTipoCurso.resx">
+      <DependentUpon>ReporteTipoCurso.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="cnnstring.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

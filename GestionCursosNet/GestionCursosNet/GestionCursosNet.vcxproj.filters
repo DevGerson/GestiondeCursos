@@ -45,6 +45,99 @@
     <ClCompile Include="NuevosTipoCurso.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="AsigMenu.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpMenu.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpAlumno.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpCatedratico.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncionesGenerales.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassExpAlumno.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassExpCatedratico.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassTipoCurso.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassCurso.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="NuevoCentroCosto.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="NuevoDepartamento.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassCentroCosto.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="NuevoInstitucion.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassDepartamento.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassInstitucion.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassSalon.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassAsgAlumno.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassAsgCatedratico.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassAsgSalon.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="CadenaConexion.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ReporteMenu.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ReporteAlumno.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ReporteCatedratico.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ReporteTipoCurso.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ReporteCurso.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ReporteCentroCosto.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ReporteSalon.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ReporteDepartamento.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ReporteAsgAlumno.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ReporteAsgCatedratico.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ReporteAsgSalon.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FrmPrincipal.h">
@@ -77,6 +170,99 @@
     <ClInclude Include="NuevosTipoCurso.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="AsigMenu.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpMenu.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpAlumno.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpCatedratico.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncionesGenerales.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassExpAlumno.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassExpCatedratico.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassTipoCurso.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassCurso.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="NuevoCentroCosto.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="NuevoDepartamento.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassCentroCosto.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="NuevoInstitucion.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassDepartamento.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassInstitucion.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassSalon.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassAsgAlumno.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassAsgCatedratico.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassAsgSalon.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="CadenaConexion.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ReporteMenu.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ReporteAlumno.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ReporteCatedratico.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ReporteTipoCurso.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ReporteCurso.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ReporteCentroCosto.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ReporteSalon.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ReporteDepartamento.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ReporteAsgAlumno.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ReporteAsgCatedratico.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ReporteAsgSalon.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FrmPrincipal.resx">
@@ -91,5 +277,53 @@
     <EmbeddedResource Include="NuevosCatedraticos.resx">
       <Filter>Archivos de recursos</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="NuevosTipoCurso.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsigMenu.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsigAlumnos.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsigCatedraticos.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpMenu.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpAlumno.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpCatedratico.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoDepartamento.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoCentroCosto.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoInstitucion.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsigSalones.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevosSalones.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteMenu.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteDepartamento.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCurso.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="cnnstring.txt" />
   </ItemGroup>
 </Project>

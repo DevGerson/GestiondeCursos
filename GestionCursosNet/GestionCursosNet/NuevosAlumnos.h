@@ -1,5 +1,8 @@
 #pragma once
 
+#include "FuncionesGenerales.h"
+#include "ClassExpAlumno.h"
+
 namespace GestionCursosNet {
 
 	using namespace System;
@@ -14,13 +17,12 @@ namespace GestionCursosNet {
 	/// </summary>
 	public ref class NuevosAlumnos : public System::Windows::Forms::Form
 	{
+	public: String^ cnnstring;
 	public:
-		NuevosAlumnos(void)
+		NuevosAlumnos(String^ Cnnstring)
 		{
 			InitializeComponent();
-			//
-			//TODO: agregar código de constructor aquí
-			//
+			cnnstring = Cnnstring;
 		}
 
 	protected:
@@ -34,28 +36,50 @@ namespace GestionCursosNet {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::TextBox^  textBox1;
+	private: Bunifu::Framework::UI::BunifuMetroTextbox^  txt_direccion;
+	private: Bunifu::Framework::UI::BunifuMetroTextbox^  txt_nombre;
 	protected:
+
+	protected:
+
+
+
+
+
+	private: Bunifu::Framework::UI::BunifuMetroTextbox^  txt_dpi;
+	private: Bunifu::Framework::UI::BunifuMetroTextbox^  txt_codigo;
+
+
+
+
 	private: System::Windows::Forms::Label^  label1;
-	private: System::Windows::Forms::Label^  label2;
-	private: System::Windows::Forms::TextBox^  textBox2;
-	private: System::Windows::Forms::Button^  button1;
-	private: System::Windows::Forms::Button^  button2;
-	private: System::Windows::Forms::Button^  button3;
-	private: System::Windows::Forms::Button^  button4;
-	private: System::Windows::Forms::Label^  label3;
-	private: System::Windows::Forms::DateTimePicker^  dateTimePicker1;
-	private: System::Windows::Forms::TextBox^  textBox3;
-	private: System::Windows::Forms::Label^  label4;
-	private: System::Windows::Forms::Label^  label5;
-	private: System::Windows::Forms::ComboBox^  comboBox1;
-	private: System::Windows::Forms::Label^  label6;
-	private: System::Windows::Forms::ComboBox^  comboBox2;
-	private: System::Windows::Forms::TextBox^  textBox4;
-	private: System::Windows::Forms::Label^  label7;
-	private: System::Windows::Forms::TextBox^  textBox5;
-	private: System::Windows::Forms::Label^  label8;
-	private: System::Windows::Forms::Button^  button5;
+	private: Bunifu::Framework::UI::BunifuImageButton^  bunifuImageButton1;
+	private: Bunifu::Framework::UI::BunifuImageButton^  bunifuImageButton2;
+	private: Bunifu::Framework::UI::BunifuImageButton^  bunifuImageButton3;
+	private: Bunifu::Framework::UI::BunifuImageButton^  bunifuImageButton4;
+
+
+	protected:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	private:
 		/// <summary>
@@ -70,272 +94,312 @@ namespace GestionCursosNet {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(NuevosAlumnos::typeid));
+			this->txt_direccion = (gcnew Bunifu::Framework::UI::BunifuMetroTextbox());
+			this->txt_nombre = (gcnew Bunifu::Framework::UI::BunifuMetroTextbox());
+			this->txt_dpi = (gcnew Bunifu::Framework::UI::BunifuMetroTextbox());
+			this->txt_codigo = (gcnew Bunifu::Framework::UI::BunifuMetroTextbox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
-			this->button4 = (gcnew System::Windows::Forms::Button());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->dateTimePicker1 = (gcnew System::Windows::Forms::DateTimePicker());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
-			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
-			this->label7 = (gcnew System::Windows::Forms::Label());
-			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
-			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->bunifuImageButton1 = (gcnew Bunifu::Framework::UI::BunifuImageButton());
+			this->bunifuImageButton2 = (gcnew Bunifu::Framework::UI::BunifuImageButton());
+			this->bunifuImageButton3 = (gcnew Bunifu::Framework::UI::BunifuImageButton());
+			this->bunifuImageButton4 = (gcnew Bunifu::Framework::UI::BunifuImageButton());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton4))->BeginInit();
 			this->SuspendLayout();
 			// 
-			// textBox1
+			// txt_direccion
 			// 
-			this->textBox1->Font = (gcnew System::Drawing::Font(L"Tahoma", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->txt_direccion->BorderColorFocused = System::Drawing::Color::Blue;
+			this->txt_direccion->BorderColorIdle = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->txt_direccion->BorderColorMouseHover = System::Drawing::Color::Blue;
+			this->txt_direccion->BorderThickness = 1;
+			this->txt_direccion->Cursor = System::Windows::Forms::Cursors::IBeam;
+			this->txt_direccion->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox1->Location = System::Drawing::Point(24, 41);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(228, 22);
-			this->textBox1->TabIndex = 0;
+			this->txt_direccion->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->txt_direccion->isPassword = false;
+			this->txt_direccion->Location = System::Drawing::Point(62, 219);
+			this->txt_direccion->Margin = System::Windows::Forms::Padding(4);
+			this->txt_direccion->Name = L"txt_direccion";
+			this->txt_direccion->Size = System::Drawing::Size(350, 25);
+			this->txt_direccion->TabIndex = 17;
+			this->txt_direccion->Text = L"Direccion";
+			this->txt_direccion->TextAlign = System::Windows::Forms::HorizontalAlignment::Left;
+			this->txt_direccion->Enter += gcnew System::EventHandler(this, &NuevosAlumnos::txt_direccion_Enter);
+			this->txt_direccion->Leave += gcnew System::EventHandler(this, &NuevosAlumnos::txt_direccion_Leave);
+			// 
+			// txt_nombre
+			// 
+			this->txt_nombre->BorderColorFocused = System::Drawing::Color::Blue;
+			this->txt_nombre->BorderColorIdle = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->txt_nombre->BorderColorMouseHover = System::Drawing::Color::Blue;
+			this->txt_nombre->BorderThickness = 1;
+			this->txt_nombre->Cursor = System::Windows::Forms::Cursors::IBeam;
+			this->txt_nombre->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->txt_nombre->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->txt_nombre->isPassword = false;
+			this->txt_nombre->Location = System::Drawing::Point(62, 143);
+			this->txt_nombre->Margin = System::Windows::Forms::Padding(4);
+			this->txt_nombre->Name = L"txt_nombre";
+			this->txt_nombre->Size = System::Drawing::Size(350, 25);
+			this->txt_nombre->TabIndex = 15;
+			this->txt_nombre->Text = L"Nombre";
+			this->txt_nombre->TextAlign = System::Windows::Forms::HorizontalAlignment::Left;
+			this->txt_nombre->Enter += gcnew System::EventHandler(this, &NuevosAlumnos::txt_nombre_Enter);
+			this->txt_nombre->Leave += gcnew System::EventHandler(this, &NuevosAlumnos::txt_nombre_Leave);
+			// 
+			// txt_dpi
+			// 
+			this->txt_dpi->BorderColorFocused = System::Drawing::Color::Blue;
+			this->txt_dpi->BorderColorIdle = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->txt_dpi->BorderColorMouseHover = System::Drawing::Color::Blue;
+			this->txt_dpi->BorderThickness = 1;
+			this->txt_dpi->Cursor = System::Windows::Forms::Cursors::IBeam;
+			this->txt_dpi->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->txt_dpi->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->txt_dpi->isPassword = false;
+			this->txt_dpi->Location = System::Drawing::Point(62, 181);
+			this->txt_dpi->Margin = System::Windows::Forms::Padding(4);
+			this->txt_dpi->Name = L"txt_dpi";
+			this->txt_dpi->Size = System::Drawing::Size(350, 25);
+			this->txt_dpi->TabIndex = 16;
+			this->txt_dpi->Text = L"DPI";
+			this->txt_dpi->TextAlign = System::Windows::Forms::HorizontalAlignment::Left;
+			this->txt_dpi->Enter += gcnew System::EventHandler(this, &NuevosAlumnos::txt_dpi_Enter);
+			this->txt_dpi->Leave += gcnew System::EventHandler(this, &NuevosAlumnos::txt_dpi_Leave);
+			// 
+			// txt_codigo
+			// 
+			this->txt_codigo->BorderColorFocused = System::Drawing::Color::Blue;
+			this->txt_codigo->BorderColorIdle = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->txt_codigo->BorderColorMouseHover = System::Drawing::Color::Blue;
+			this->txt_codigo->BorderThickness = 1;
+			this->txt_codigo->Cursor = System::Windows::Forms::Cursors::IBeam;
+			this->txt_codigo->Enabled = false;
+			this->txt_codigo->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->txt_codigo->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->txt_codigo->isPassword = false;
+			this->txt_codigo->Location = System::Drawing::Point(62, 105);
+			this->txt_codigo->Margin = System::Windows::Forms::Padding(4);
+			this->txt_codigo->Name = L"txt_codigo";
+			this->txt_codigo->Size = System::Drawing::Size(350, 25);
+			this->txt_codigo->TabIndex = 13;
+			this->txt_codigo->Text = L"Codigo";
+			this->txt_codigo->TextAlign = System::Windows::Forms::HorizontalAlignment::Left;
+			this->txt_codigo->Enter += gcnew System::EventHandler(this, &NuevosAlumnos::txt_codigo_Enter);
+			this->txt_codigo->Leave += gcnew System::EventHandler(this, &NuevosAlumnos::txt_codigo_Leave);
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Tahoma", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Segoe UI", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(21, 24);
+			this->label1->Location = System::Drawing::Point(56, 49);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(53, 16);
-			this->label1->TabIndex = 1;
-			this->label1->Text = L"Nombre";
+			this->label1->Size = System::Drawing::Size(99, 32);
+			this->label1->TabIndex = 14;
+			this->label1->Text = L"Alumno";
 			// 
-			// label2
+			// bunifuImageButton1
 			// 
-			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Tahoma", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(21, 72);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(27, 16);
-			this->label2->TabIndex = 2;
-			this->label2->Text = L"DPI";
+			this->bunifuImageButton1->BackColor = System::Drawing::Color::Transparent;
+			this->bunifuImageButton1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuImageButton1.Image")));
+			this->bunifuImageButton1->ImageActive = nullptr;
+			this->bunifuImageButton1->Location = System::Drawing::Point(437, 105);
+			this->bunifuImageButton1->Name = L"bunifuImageButton1";
+			this->bunifuImageButton1->Size = System::Drawing::Size(35, 30);
+			this->bunifuImageButton1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->bunifuImageButton1->TabIndex = 18;
+			this->bunifuImageButton1->TabStop = false;
+			this->bunifuImageButton1->Zoom = 10;
+			this->bunifuImageButton1->Click += gcnew System::EventHandler(this, &NuevosAlumnos::bunifuImageButton1_Click);
 			// 
-			// textBox2
+			// bunifuImageButton2
 			// 
-			this->textBox2->Font = (gcnew System::Drawing::Font(L"Tahoma", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->textBox2->Location = System::Drawing::Point(24, 89);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(228, 22);
-			this->textBox2->TabIndex = 3;
+			this->bunifuImageButton2->BackColor = System::Drawing::Color::Transparent;
+			this->bunifuImageButton2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuImageButton2.Image")));
+			this->bunifuImageButton2->ImageActive = nullptr;
+			this->bunifuImageButton2->Location = System::Drawing::Point(437, 143);
+			this->bunifuImageButton2->Name = L"bunifuImageButton2";
+			this->bunifuImageButton2->Size = System::Drawing::Size(37, 30);
+			this->bunifuImageButton2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->bunifuImageButton2->TabIndex = 18;
+			this->bunifuImageButton2->TabStop = false;
+			this->bunifuImageButton2->Zoom = 10;
+			this->bunifuImageButton2->Click += gcnew System::EventHandler(this, &NuevosAlumnos::bunifuImageButton2_Click);
 			// 
-			// button1
+			// bunifuImageButton3
 			// 
-			this->button1->Location = System::Drawing::Point(278, 41);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
-			this->button1->TabIndex = 4;
-			this->button1->Text = L"Guardar";
-			this->button1->UseVisualStyleBackColor = true;
+			this->bunifuImageButton3->BackColor = System::Drawing::Color::Transparent;
+			this->bunifuImageButton3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuImageButton3.Image")));
+			this->bunifuImageButton3->ImageActive = nullptr;
+			this->bunifuImageButton3->Location = System::Drawing::Point(437, 181);
+			this->bunifuImageButton3->Name = L"bunifuImageButton3";
+			this->bunifuImageButton3->Size = System::Drawing::Size(37, 30);
+			this->bunifuImageButton3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->bunifuImageButton3->TabIndex = 18;
+			this->bunifuImageButton3->TabStop = false;
+			this->bunifuImageButton3->Zoom = 10;
+			this->bunifuImageButton3->Click += gcnew System::EventHandler(this, &NuevosAlumnos::bunifuImageButton3_Click);
 			// 
-			// button2
+			// bunifuImageButton4
 			// 
-			this->button2->Location = System::Drawing::Point(278, 73);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(75, 23);
-			this->button2->TabIndex = 5;
-			this->button2->Text = L"Buscar";
-			this->button2->UseVisualStyleBackColor = true;
-			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(278, 104);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(75, 23);
-			this->button3->TabIndex = 6;
-			this->button3->Text = L"Eliminar";
-			this->button3->UseVisualStyleBackColor = true;
-			// 
-			// button4
-			// 
-			this->button4->Location = System::Drawing::Point(278, 137);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(75, 23);
-			this->button4->TabIndex = 7;
-			this->button4->Text = L"Limpiar";
-			this->button4->UseVisualStyleBackColor = true;
-			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Tahoma", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(21, 122);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(127, 16);
-			this->label3->TabIndex = 8;
-			this->label3->Text = L"Fecha de Nacimiento";
-			// 
-			// dateTimePicker1
-			// 
-			this->dateTimePicker1->Font = (gcnew System::Drawing::Font(L"Tahoma", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->dateTimePicker1->Format = System::Windows::Forms::DateTimePickerFormat::Short;
-			this->dateTimePicker1->Location = System::Drawing::Point(24, 139);
-			this->dateTimePicker1->Name = L"dateTimePicker1";
-			this->dateTimePicker1->Size = System::Drawing::Size(141, 23);
-			this->dateTimePicker1->TabIndex = 9;
-			// 
-			// textBox3
-			// 
-			this->textBox3->Enabled = false;
-			this->textBox3->Font = (gcnew System::Drawing::Font(L"Tahoma", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->textBox3->Location = System::Drawing::Point(174, 139);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(78, 22);
-			this->textBox3->TabIndex = 11;
-			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Tahoma", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(171, 122);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(36, 16);
-			this->label4->TabIndex = 10;
-			this->label4->Text = L"Edad";
-			// 
-			// label5
-			// 
-			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Tahoma", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label5->Location = System::Drawing::Point(21, 175);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(73, 16);
-			this->label5->TabIndex = 13;
-			this->label5->Text = L"Estado Civil";
-			// 
-			// comboBox1
-			// 
-			this->comboBox1->Font = (gcnew System::Drawing::Font(L"Tahoma", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Solter@", L"Casad@" });
-			this->comboBox1->Location = System::Drawing::Point(24, 192);
-			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(228, 22);
-			this->comboBox1->TabIndex = 14;
-			// 
-			// label6
-			// 
-			this->label6->AutoSize = true;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Tahoma", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(21, 224);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(121, 16);
-			this->label6->TabIndex = 16;
-			this->label6->Text = L"Carrera Nivel Medio";
-			// 
-			// comboBox2
-			// 
-			this->comboBox2->AutoCompleteCustomSource->AddRange(gcnew cli::array< System::String^  >(2) { L"Soltero", L"Casado" });
-			this->comboBox2->Font = (gcnew System::Drawing::Font(L"Tahoma", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->comboBox2->FormattingEnabled = true;
-			this->comboBox2->Location = System::Drawing::Point(24, 242);
-			this->comboBox2->Name = L"comboBox2";
-			this->comboBox2->Size = System::Drawing::Size(228, 22);
-			this->comboBox2->TabIndex = 17;
-			// 
-			// textBox4
-			// 
-			this->textBox4->Font = (gcnew System::Drawing::Font(L"Tahoma", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->textBox4->Location = System::Drawing::Point(24, 289);
-			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(228, 22);
-			this->textBox4->TabIndex = 18;
-			// 
-			// label7
-			// 
-			this->label7->AutoSize = true;
-			this->label7->Font = (gcnew System::Drawing::Font(L"Tahoma", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label7->Location = System::Drawing::Point(21, 272);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(123, 16);
-			this->label7->TabIndex = 19;
-			this->label7->Text = L"Institucion o Colegio";
-			// 
-			// textBox5
-			// 
-			this->textBox5->Font = (gcnew System::Drawing::Font(L"Tahoma", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->textBox5->Location = System::Drawing::Point(24, 340);
-			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(228, 22);
-			this->textBox5->TabIndex = 20;
-			// 
-			// label8
-			// 
-			this->label8->AutoSize = true;
-			this->label8->Font = (gcnew System::Drawing::Font(L"Tahoma", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label8->Location = System::Drawing::Point(21, 323);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(134, 16);
-			this->label8->TabIndex = 21;
-			this->label8->Text = L"Residencia (direccion)";
-			// 
-			// button5
-			// 
-			this->button5->Location = System::Drawing::Point(278, 169);
-			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(75, 23);
-			this->button5->TabIndex = 22;
-			this->button5->Text = L"Cerrar";
-			this->button5->UseVisualStyleBackColor = true;
+			this->bunifuImageButton4->BackColor = System::Drawing::Color::Transparent;
+			this->bunifuImageButton4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuImageButton4.Image")));
+			this->bunifuImageButton4->ImageActive = nullptr;
+			this->bunifuImageButton4->Location = System::Drawing::Point(437, 219);
+			this->bunifuImageButton4->Name = L"bunifuImageButton4";
+			this->bunifuImageButton4->Size = System::Drawing::Size(37, 30);
+			this->bunifuImageButton4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->bunifuImageButton4->TabIndex = 18;
+			this->bunifuImageButton4->TabStop = false;
+			this->bunifuImageButton4->Zoom = 10;
 			// 
 			// NuevosAlumnos
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(380, 395);
-			this->Controls->Add(this->button5);
-			this->Controls->Add(this->textBox5);
-			this->Controls->Add(this->label8);
-			this->Controls->Add(this->textBox4);
-			this->Controls->Add(this->label7);
-			this->Controls->Add(this->comboBox2);
-			this->Controls->Add(this->label6);
-			this->Controls->Add(this->comboBox1);
-			this->Controls->Add(this->label5);
-			this->Controls->Add(this->textBox3);
-			this->Controls->Add(this->label4);
-			this->Controls->Add(this->dateTimePicker1);
-			this->Controls->Add(this->label3);
-			this->Controls->Add(this->button4);
-			this->Controls->Add(this->button3);
-			this->Controls->Add(this->button2);
-			this->Controls->Add(this->button1);
-			this->Controls->Add(this->textBox2);
-			this->Controls->Add(this->textBox1);
-			this->Controls->Add(this->label2);
+			this->BackColor = System::Drawing::Color::White;
+			this->ClientSize = System::Drawing::Size(539, 302);
+			this->Controls->Add(this->bunifuImageButton4);
+			this->Controls->Add(this->bunifuImageButton3);
+			this->Controls->Add(this->bunifuImageButton2);
+			this->Controls->Add(this->bunifuImageButton1);
+			this->Controls->Add(this->txt_direccion);
+			this->Controls->Add(this->txt_nombre);
+			this->Controls->Add(this->txt_dpi);
+			this->Controls->Add(this->txt_codigo);
 			this->Controls->Add(this->label1);
 			this->Name = L"NuevosAlumnos";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Nuevos Alumnos";
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->bunifuImageButton4))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
-	};
+
+		FuncionesGenerales^ funcionesGenerales = gcnew FuncionesGenerales();
+
+	private: System::Void txt_nombre_Enter(System::Object^  sender, System::EventArgs^  e)
+	{
+		funcionesGenerales->PlaceHolderTextBoxEnter(txt_nombre, "Nombre");
+	}
+	private: System::Void txt_nombre_Leave(System::Object^  sender, System::EventArgs^  e)
+	{
+		funcionesGenerales->PlaceHolderTextBoxLeave(txt_nombre, "Nombre");
+	}
+	private: System::Void txt_dpi_Enter(System::Object^  sender, System::EventArgs^  e)
+	{
+		funcionesGenerales->PlaceHolderTextBoxEnter(txt_dpi, "DPI");
+	}
+	private: System::Void txt_dpi_Leave(System::Object^  sender, System::EventArgs^  e)
+	{
+		funcionesGenerales->PlaceHolderTextBoxLeave(txt_dpi, "DPI");
+	}
+	private: System::Void txt_direccion_Enter(System::Object^  sender, System::EventArgs^  e)
+	{
+		funcionesGenerales->PlaceHolderTextBoxEnter(txt_direccion, "Direccion");
+	}
+	private: System::Void txt_direccion_Leave(System::Object^  sender, System::EventArgs^  e)
+	{
+		funcionesGenerales->PlaceHolderTextBoxLeave(txt_direccion, "Direccion");
+	}
+	private: System::Void bunifuImageButton1_Click(System::Object^  sender, System::EventArgs^  e)
+	{
+		ClassExpAlumno^ ExpAlumno = gcnew ClassExpAlumno(cnnstring);
+		ExpAlumno->Parametros(txt_nombre->Text, txt_dpi->Text, txt_direccion->Text);
+		if (ExpAlumno->Ingresar())
+		{
+			MessageBox::Show("Se guardo correctamente.");
+			Limpiar();
+		}
+		else
+		{
+			MessageBox::Show("No se pudo guardar.");
+		}
+	}
+	private: void Limpiar()
+	{
+		funcionesGenerales->LimpiarTextBox(txt_codigo, "Codigo");
+		funcionesGenerales->LimpiarTextBox(txt_nombre, "Nombre");
+		funcionesGenerales->LimpiarTextBox(txt_direccion, "Direccion");
+		funcionesGenerales->LimpiarTextBox(txt_dpi, "DPI");
+		txt_nombre->Focus();
+	}
+
+			 bool busqueda;
+
+	private: System::Void bunifuImageButton3_Click(System::Object^  sender, System::EventArgs^  e)
+	{
+		if (busqueda)
+		{
+			ClassExpAlumno^ ExpAlumno = gcnew ClassExpAlumno(cnnstring);
+			ExpAlumno->cod_alumno = Convert::ToInt32(txt_codigo->Text);
+			ExpAlumno->Obtener();
+			txt_nombre->Text = ExpAlumno->nombre;
+			txt_direccion->Text = ExpAlumno->direccion;
+			txt_dpi->Text = ExpAlumno->dpi;
+			VerificarPlaceHolder();
+		}
+		else
+		{
+			txt_codigo->Enabled = true;
+			busqueda = true;
+			txt_codigo->Focus();
+		}
+	}
+	private: System::Void bunifuImageButton2_Click(System::Object^  sender, System::EventArgs^  e)
+	{
+		ClassExpAlumno^ ExpAlumno = gcnew ClassExpAlumno(cnnstring);
+		ExpAlumno->cod_alumno = Convert::ToInt32(txt_codigo->Text);
+		if (ExpAlumno->Eliminar())
+		{
+			MessageBox::Show("Se elimino correctamente.");
+			Limpiar();
+		}
+		else
+		{
+			MessageBox::Show("No se pudo eliminar.");
+		}
+	}
+	private: void VerificarPlaceHolder()
+	{
+		funcionesGenerales->PlaceHolderTextBoxLeave(txt_codigo, "Codigo");
+		funcionesGenerales->PlaceHolderTextBoxLeave(txt_nombre, "Nombre");
+		funcionesGenerales->PlaceHolderTextBoxLeave(txt_dpi, "DPI");
+		funcionesGenerales->PlaceHolderTextBoxLeave(txt_direccion, "Direccion");
+	}
+	private: System::Void txt_codigo_Enter(System::Object^  sender, System::EventArgs^  e)
+	{
+		funcionesGenerales->PlaceHolderTextBoxEnter(txt_codigo, "Codigo");
+	}
+	private: System::Void txt_codigo_Leave(System::Object^  sender, System::EventArgs^  e)
+	{
+		funcionesGenerales->PlaceHolderTextBoxLeave(txt_codigo, "Codigo");
+	}
+
+};
+
+
+
+
 }

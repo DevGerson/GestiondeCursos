@@ -1,8 +1,23 @@
+  GestionCursosNet.AsigAlumnos.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.AsigCatedraticos.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.AsigMenu.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.AsigSalones.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.ExpAlumno.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.ExpCatedratico.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.ExpMenu.resources - Embedded, ContainedInManifestFile, 
   GestionCursosNet.FrmPrincipal.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.NuevoCentroCosto.resources - Embedded, ContainedInManifestFile, 
   GestionCursosNet.NuevoCursos.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.NuevoDepartamento.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.NuevoInstitucion.resources - Embedded, ContainedInManifestFile, 
   GestionCursosNet.NuevosAlumnos.resources - Embedded, ContainedInManifestFile, 
   GestionCursosNet.NuevosCatedraticos.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.NuevosSalones.resources - Embedded, ContainedInManifestFile, 
   GestionCursosNet.NuevosTipoCurso.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.ReporteCurso.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.ReporteDepartamento.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.ReporteMenu.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.ReporteTipoCurso.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly GestionCursosNet, Version=0.0.*, Culture=Todos los idiomas (todos los países): 
 	hash=SHA1, flags=PublicKey
@@ -18,6 +33,8 @@ Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561
 	hash=None, flags=None
 Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Assembly System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
 Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
 Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
@@ -28,30 +45,124 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Assembly XanderUI, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
+	hash=None, flags=None
 Class GestionCursosNet.AsigAlumnos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
 Class GestionCursosNet.AsigCatedraticos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
 Class GestionCursosNet.AsigSalones: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
+Class GestionCursosNet.AsigMenu: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
 Class GestionCursosNet.NuevosAlumnos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
+Class GestionCursosNet.ExpAlumno: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
 Class GestionCursosNet.NuevosCatedraticos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
+Class GestionCursosNet.ExpCatedratico: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
+Class GestionCursosNet.NuevoCursos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
+Class GestionCursosNet.NuevosTipoCurso: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
+Class GestionCursosNet.NuevoCentroCosto: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
+Class GestionCursosNet.NuevoInstitucion: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
+Class GestionCursosNet.NuevoDepartamento: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
+Class GestionCursosNet.NuevosSalones: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
+Class GestionCursosNet.ExpMenu: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
+Class GestionCursosNet.ReporteCurso: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
+Class GestionCursosNet.ReporteTipoCurso: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
+Class GestionCursosNet.ReporteMenu: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
 Class GestionCursosNet.FrmPrincipal: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class GestionCursosNet.NuevoCursos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Methods:
+    MaximizarVentana(): PrivateScope, Public, HideBySig
+Class GestionCursosNet.ReporteAlumno: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class GestionCursosNet.NuevosSalones: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class GestionCursosNet.ReporteAsgAlumno: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class GestionCursosNet.NuevosTipoCurso: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class GestionCursosNet.ReporteAsgCatedratico: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GestionCursosNet.ReporteAsgSalon: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GestionCursosNet.ReporteCatedratico: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GestionCursosNet.ReporteCentroCosto: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GestionCursosNet.ReporteDepartamento: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GestionCursosNet.ReporteSalon: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

@@ -1,0 +1,1 @@
+Server = localhost; Database = gestioncursos; Uid = root; Pwd = admin;

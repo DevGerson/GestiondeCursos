@@ -1,24 +1,50 @@
 #include "CConexion.h"
 
-CConexion::CConexion()
+CConexion::CConexion(String^ cnnstring)
 {
+	conexion = cnnstring;
 }
 
-void CConexion::Conectar() {
-	cnn->Open();
+bool CConexion::Proceso(String^ Consulta)
+{
+	try {
+		cnn = gcnew MySqlConnection(conexion);
+		cnn->Open();
+		cmd = gcnew MySqlCommand(Consulta, cnn);
+		cmd->ExecuteNonQuery();
+		return true;
+	}
+	catch (ApplicationException^ e)
+	{
+		cnn->Close();
+		return false;
+	}
+	finally
+	{
+		cnn->Close();
+	}
+	
 }
 
-void CConexion::Desconectar() {
-	cnn->Close();
-}
+DataTable^ CConexion::Consulta(String^ Consulta) 
+{
+	try 
+	{
+		cnn = gcnew MySqlConnection(conexion);
+		cnn->Open();
+		adp = gcnew MySqlDataAdapter(Consulta, cnn);
+		dt = gcnew DataTable();
+		adp->Fill(dt);
+		return dt;
+	}
+	catch (ApplicationException^ e)
+	{
+		cnn->Close();
+		return nullptr;
+	}
+	finally
+	{
+		cnn->Close();
+	}
 
-void CConexion::IngresarQuery(String^ SqlQuery) {
-	SQLQuery = SqlQuery;
-}
-
-DataTable^ CConexion::QueryDataTable() {
-	adp = gcnew MySqlDataAdapter(SQLQuery,cnn);
-	dt = gcnew DataTable();
-	adp->Fill(dt);
-	return dt;
 }

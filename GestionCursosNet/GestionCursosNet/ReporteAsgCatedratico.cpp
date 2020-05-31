@@ -1,0 +1,2 @@
+#include "ReporteAsgCatedratico.h"
+
