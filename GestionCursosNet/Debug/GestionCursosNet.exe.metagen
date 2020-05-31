@@ -14,6 +14,7 @@
   GestionCursosNet.NuevosCatedraticos.resources - Embedded, ContainedInManifestFile, 
   GestionCursosNet.NuevosSalones.resources - Embedded, ContainedInManifestFile, 
   GestionCursosNet.NuevosTipoCurso.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.ReporteAsgAlumno.resources - Embedded, ContainedInManifestFile, 
   GestionCursosNet.ReporteCurso.resources - Embedded, ContainedInManifestFile, 
   GestionCursosNet.ReporteDepartamento.resources - Embedded, ContainedInManifestFile, 
   GestionCursosNet.ReporteMenu.resources - Embedded, ContainedInManifestFile, 
@@ -132,6 +133,11 @@ Class GestionCursosNet.ReporteTipoCurso: AutoLayout, AnsiClass, Class, Public, B
     Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     System.String cnnstring : Public
+Class GestionCursosNet.ReporteAsgAlumno: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
 Class GestionCursosNet.ReporteMenu: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -143,9 +149,6 @@ Class GestionCursosNet.FrmPrincipal: AutoLayout, AnsiClass, Class, Public, Befor
   Methods:
     MaximizarVentana(): PrivateScope, Public, HideBySig
 Class GestionCursosNet.ReporteAlumno: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class GestionCursosNet.ReporteAsgAlumno: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class GestionCursosNet.ReporteAsgCatedratico: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

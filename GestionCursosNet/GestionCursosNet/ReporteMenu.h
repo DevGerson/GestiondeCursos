@@ -1,6 +1,7 @@
 #pragma once
 #include "ReporteCurso.h"
 #include "ReporteTipoCurso.h"
+#include "ReporteAsgAlumno.h"
 
 namespace GestionCursosNet {
 
@@ -339,7 +340,7 @@ namespace GestionCursosNet {
 			this->bunifuSeparator1->LineThickness = 1;
 			this->bunifuSeparator1->Location = System::Drawing::Point(61, 85);
 			this->bunifuSeparator1->Name = L"bunifuSeparator1";
-			this->bunifuSeparator1->Size = System::Drawing::Size(550, 16);
+			this->bunifuSeparator1->Size = System::Drawing::Size(516, 16);
 			this->bunifuSeparator1->TabIndex = 32;
 			this->bunifuSeparator1->Transparency = 255;
 			this->bunifuSeparator1->Vertical = false;
@@ -381,6 +382,7 @@ namespace GestionCursosNet {
 			this->btnAlumno->TabIndex = 28;
 			this->btnAlumno->TabStop = false;
 			this->btnAlumno->Zoom = 5;
+			this->btnAlumno->Click += gcnew System::EventHandler(this, &ReporteMenu::btnAlumno_Click);
 			// 
 			// EpForm
 			// 
@@ -497,10 +499,14 @@ namespace GestionCursosNet {
 		ReporteCurso^ RCurso = gcnew ReporteCurso(cnnstring);
 		RCurso->Show();
 	}
-	private: System::Void btn_tipocurso_Click(System::Object^  sender, System::EventArgs^  e) 
+	private: System::Void btn_tipocurso_Click(System::Object^  sender, System::EventArgs^  e)
 	{
 		ReporteTipoCurso^ RTCurso = gcnew ReporteTipoCurso(cnnstring);
 		RTCurso->Show();
 	}
-};
+	private: System::Void btnAlumno_Click(System::Object^  sender, System::EventArgs^  e) {
+		ReporteAsgAlumno^ RAlumno = gcnew ReporteAsgAlumno(cnnstring);
+		RAlumno->Show();
+	}
+	};
 }

@@ -20,6 +20,7 @@ public:
 	bool Obtener();
 	DataTable^ Buscar();
 	DataTable^ Vista();
+	DataTable^ Reporte(String^ nombre);
 
 private:
 	String^ CnnString;

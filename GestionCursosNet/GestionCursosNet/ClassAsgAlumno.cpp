@@ -29,6 +29,13 @@ DataTable^ ClassAsgAlumno::Buscar()
 	return Trans->Consulta("CALL sp_sel_asg_alumno (" + parametros + ")");
 }
 
+DataTable^ ClassAsgAlumno::Reporte(String^ nombre)
+{
+	CConexion^ Trans = gcnew CConexion(CnnString);
+	String^ parametros = nombre;
+	return Trans->Consulta("SELECT * FROM v_asg_alumno WHERE nombre like '%" + parametros + "%'");
+}
+
 DataTable^ ClassAsgAlumno::Vista()
 {
 	CConexion^ Trans = gcnew CConexion(CnnString);

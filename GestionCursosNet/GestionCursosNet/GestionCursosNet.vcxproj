@@ -334,6 +334,9 @@
     <EmbeddedResource Include="NuevosTipoCurso.resx">
       <DependentUpon>NuevosTipoCurso.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteAsgAlumno.resx">
+      <DependentUpon>ReporteAsgAlumno.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReporteCurso.resx">
       <DependentUpon>ReporteCurso.h</DependentUpon>
     </EmbeddedResource>
