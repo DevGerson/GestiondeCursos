@@ -1,0 +1,11 @@
+DROP TABLE exp_calificacion;
+DROP TABLE asg_catedratico;
+DROP TABLE asg_alumno;
+DROP TABLE exp_catedratico;
+DROP TABLE exp_alumno;
+DROP TABLE asg_salon_curso;
+DROP TABLE pg_curso;
+DROP TABLE pg_tipocurso;
+DROP TABLE pg_salon;
+DROP TABLE pg_centrocosto;
+DROP TABLE pg_departamento;

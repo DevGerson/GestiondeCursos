@@ -63,5 +63,3 @@ INNER JOIN pg_centrocosto AS cc ON cc.cod_centrocosto = sl.cod_centrocosto
 INNER JOIN pg_departamento AS dp ON dp.cod_departamento = cc.cod_departamento
 INNER JOIN exp_alumno AS exp ON asg.cod_alumno = exp.cod_alumno
 // DELIMITER ;
-
-

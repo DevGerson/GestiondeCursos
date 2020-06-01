@@ -399,9 +399,15 @@ namespace GestionCursosNet {
 	}
 	private: void CargarGrid()
 	{
-		ClassCalificacion^ Calificacion = gcnew ClassCalificacion(cnnstring);
-		Calificacion->cod_alumno = Convert::ToInt32(cmb_alumno->SelectedValue);
-		gv_datos->DataSource = Calificacion->Vista();
+		try {
+			ClassCalificacion^ Calificacion = gcnew ClassCalificacion(cnnstring);
+			Calificacion->cod_alumno = Convert::ToInt32(cmb_alumno->SelectedValue);
+			gv_datos->DataSource = Calificacion->Vista();
+		}
+		catch (InvalidCastException^ e) {
+			gv_datos->DataSource = nullptr;
+		}
+
 	}
 	private: void VerificarPlaceHolder()
 	{
@@ -440,9 +446,10 @@ namespace GestionCursosNet {
 	{
 		//CargarComboCurso();
 	}
-	private: System::Void cmb_alumno_SelectedValueChanged(System::Object^  sender, System::EventArgs^  e) 
+	private: System::Void cmb_alumno_SelectedValueChanged(System::Object^  sender, System::EventArgs^  e)
 	{
 		CargarComboCurso();
+		CargarGrid();
 	}
-};
+	};
 }

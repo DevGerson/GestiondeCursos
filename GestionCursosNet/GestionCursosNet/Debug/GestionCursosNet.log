@@ -1,8 +1,60 @@
 ﻿  AsigAlumnos.cpp
+  AsigCatedraticos.cpp
   AsigMenu.cpp
-c:\users\gerso\desktop\gestioncursos\gestioncursosnet\gestioncursosnet\expcalificacion.h(429): warning C4101: 'e': variable local sin referencia
-  FrmPrincipal.cpp
-c:\users\gerso\desktop\gestioncursos\gestioncursosnet\gestioncursosnet\expcalificacion.h(429): warning C4101: 'e': variable local sin referencia
+c:\users\gerso\desktop\gestioncursos\gestioncursosnet\gestioncursosnet\expcalificacion.h(407): warning C4101: 'e': variable local sin referencia
+c:\users\gerso\desktop\gestioncursos\gestioncursosnet\gestioncursosnet\expcalificacion.h(435): warning C4101: 'e': variable local sin referencia
+  AsigSalones.cpp
+  CadenaConexion.cpp
+c:\users\gerso\desktop\gestioncursos\gestioncursosnet\gestioncursosnet\cadenaconexion.cpp(30): warning C4101: 'e': variable local sin referencia
+  CConexion.cpp
+c:\users\gerso\desktop\gestioncursos\gestioncursosnet\gestioncursosnet\cconexion.cpp(17): warning C4101: 'e': variable local sin referencia
+c:\users\gerso\desktop\gestioncursos\gestioncursosnet\gestioncursosnet\cconexion.cpp(40): warning C4101: 'e': variable local sin referencia
+  ClassAsgAlumno.cpp
+  ClassAsgCatedratico.cpp
+  ClassAsgSalon.cpp
+  ClassCalificacion.cpp
+  ClassCentroCosto.cpp
+  ClassCurso.cpp
+  ClassDepartamento.cpp
+  ClassExpAlumno.cpp
+  ClassExpCatedratico.cpp
+  ClassInstitucion.cpp
+  ClassSalon.cpp
+  ClassTipoCurso.cpp
+  ExpAlumno.cpp
+  ExpCalificacion.cpp
+c:\users\gerso\desktop\gestioncursos\gestioncursosnet\gestioncursosnet\expcalificacion.h(407): warning C4101: 'e': variable local sin referencia
+c:\users\gerso\desktop\gestioncursos\gestioncursosnet\gestioncursosnet\expcalificacion.h(435): warning C4101: 'e': variable local sin referencia
   Generando código...
+  Compilando...
+  ExpCatedratico.cpp
+  ExpMenu.cpp
+  FrmPrincipal.cpp
+c:\users\gerso\desktop\gestioncursos\gestioncursosnet\gestioncursosnet\expcalificacion.h(407): warning C4101: 'e': variable local sin referencia
+c:\users\gerso\desktop\gestioncursos\gestioncursosnet\gestioncursosnet\expcalificacion.h(435): warning C4101: 'e': variable local sin referencia
+  FuncionesGenerales.cpp
+  NuevoCentroCosto.cpp
+  NuevoCursos.cpp
+  NuevoDepartamento.cpp
+  NuevoInstitucion.cpp
+  NuevosAlumnos.cpp
+  NuevosCatedraticos.cpp
+  NuevosSalones.cpp
+  NuevosTipoCurso.cpp
+  ReporteAlumno.cpp
+  ReporteAsgAlumno.cpp
+  ReporteAsgCatedratico.cpp
+  ReporteAsgSalon.cpp
+  ReporteCatedratico.cpp
+  ReporteCentroCosto.cpp
+  ReporteCurso.cpp
+  ReporteDepartamento.cpp
+  Generando código...
+  Compilando...
+  ReporteMenu.cpp
+  ReporteSalon.cpp
+  ReporteTipoCurso.cpp
+  Generando código...
+  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
   AsigAlumnos.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   GestionCursosNet.vcxproj -> C:\Users\gerso\Desktop\GestionCursos\GestionCursosNet\Debug\GestionCursosNet.exe

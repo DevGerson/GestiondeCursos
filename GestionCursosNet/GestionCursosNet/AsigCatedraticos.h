@@ -276,11 +276,9 @@ namespace GestionCursosNet {
 	}
 	private: void CargarComboSalon()
 	{
-		ClassAsgSalon^ Salon = gcnew ClassAsgSalon(cnnstring);
-		Salon->cod_salon = 0;
-
-		cmb_salon->DataSource = Salon->Buscar();
-		cmb_salon->DisplayMember = "cod_salon_curso";
+		ClassAsgSalon^ asgSalon = gcnew ClassAsgSalon(cnnstring);
+		cmb_salon->DataSource = asgSalon->Vista();
+		cmb_salon->DisplayMember = "curso";
 		cmb_salon->ValueMember = "cod_salon_curso";
 	}
 	private: void CargarComboCatedratico()

@@ -3,6 +3,7 @@
 #include "ClassAsgSalon.h"
 #include "ClassExpAlumno.h"
 
+
 namespace GestionCursosNet {
 
 	using namespace System;
@@ -284,8 +285,8 @@ namespace GestionCursosNet {
 	}
 	private: void CargarComboSalon()
 	{
-		ClassAsgAlumno^ asgSalon = gcnew ClassAsgAlumno(cnnstring);
-		cmb_salon->DataSource = asgSalon->VistaAll();
+		ClassAsgSalon^ asgSalon = gcnew ClassAsgSalon(cnnstring);
+		cmb_salon->DataSource = asgSalon->Vista();
 		cmb_salon->DisplayMember = "curso";
 		cmb_salon->ValueMember = "cod_salon_curso";
 	}
