@@ -3,6 +3,7 @@
   GestionCursosNet.AsigMenu.resources - Embedded, ContainedInManifestFile, 
   GestionCursosNet.AsigSalones.resources - Embedded, ContainedInManifestFile, 
   GestionCursosNet.ExpAlumno.resources - Embedded, ContainedInManifestFile, 
+  GestionCursosNet.ExpCalificacion.resources - Embedded, ContainedInManifestFile, 
   GestionCursosNet.ExpCatedratico.resources - Embedded, ContainedInManifestFile, 
   GestionCursosNet.ExpMenu.resources - Embedded, ContainedInManifestFile, 
   GestionCursosNet.FrmPrincipal.resources - Embedded, ContainedInManifestFile, 
@@ -63,17 +64,22 @@ Class GestionCursosNet.AsigSalones: AutoLayout, AnsiClass, Class, Public, Before
     Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     System.String cnnstring : Public
-Class GestionCursosNet.AsigMenu: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-  Fields:
-    System.String cnnstring : Public
 Class GestionCursosNet.NuevosAlumnos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     System.String cnnstring : Public
 Class GestionCursosNet.ExpAlumno: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
+Class GestionCursosNet.ExpCalificacion: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String cnnstring : Public
+Class GestionCursosNet.AsigMenu: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:

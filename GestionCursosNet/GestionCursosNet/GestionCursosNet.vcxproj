@@ -155,6 +155,7 @@
     <ClCompile Include="ClassAsgAlumno.cpp" />
     <ClCompile Include="ClassAsgCatedratico.cpp" />
     <ClCompile Include="ClassAsgSalon.cpp" />
+    <ClCompile Include="ClassCalificacion.cpp" />
     <ClCompile Include="ClassCentroCosto.cpp" />
     <ClCompile Include="ClassCurso.cpp" />
     <ClCompile Include="ClassDepartamento.cpp" />
@@ -164,6 +165,7 @@
     <ClCompile Include="ClassSalon.cpp" />
     <ClCompile Include="ClassTipoCurso.cpp" />
     <ClCompile Include="ExpAlumno.cpp" />
+    <ClCompile Include="ExpCalificacion.cpp" />
     <ClCompile Include="ExpCatedratico.cpp" />
     <ClCompile Include="ExpMenu.cpp" />
     <ClCompile Include="FrmPrincipal.cpp" />
@@ -206,6 +208,7 @@
     <ClInclude Include="ClassAsgAlumno.h" />
     <ClInclude Include="ClassAsgCatedratico.h" />
     <ClInclude Include="ClassAsgSalon.h" />
+    <ClInclude Include="ClassCalificacion.h" />
     <ClInclude Include="ClassCentroCosto.h" />
     <ClInclude Include="ClassCurso.h" />
     <ClInclude Include="ClassDepartamento.h" />
@@ -215,6 +218,9 @@
     <ClInclude Include="ClassSalon.h" />
     <ClInclude Include="ClassTipoCurso.h" />
     <ClInclude Include="ExpAlumno.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ExpCalificacion.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="ExpCatedratico.h">
@@ -300,6 +306,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ExpAlumno.resx">
       <DependentUpon>ExpAlumno.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpCalificacion.resx">
+      <DependentUpon>ExpCalificacion.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExpCatedratico.resx">
       <DependentUpon>ExpCatedratico.h</DependentUpon>

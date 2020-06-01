@@ -1,12 +1,6 @@
 CREATE DATABASE GestionCursos;
 USE GestionCursos;
 
-CREATE TABLE pg_institucion
-(
-	cod_institucion INT PRIMARY KEY AUTO_INCREMENT,
-    intitucion VARCHAR(100) 
-);
-
 CREATE TABLE pg_departamento
 (
 	cod_departamento INT PRIMARY KEY AUTO_INCREMENT,

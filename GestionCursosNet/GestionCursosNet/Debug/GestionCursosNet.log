@@ -1,9 +1,8 @@
 ﻿  AsigAlumnos.cpp
-  AsigCatedraticos.cpp
   AsigMenu.cpp
-  AsigSalones.cpp
-  ClassAsgSalon.cpp
+c:\users\gerso\desktop\gestioncursos\gestioncursosnet\gestioncursosnet\expcalificacion.h(429): warning C4101: 'e': variable local sin referencia
   FrmPrincipal.cpp
+c:\users\gerso\desktop\gestioncursos\gestioncursosnet\gestioncursosnet\expcalificacion.h(429): warning C4101: 'e': variable local sin referencia
   Generando código...
   AsigAlumnos.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   GestionCursosNet.vcxproj -> C:\Users\gerso\Desktop\GestionCursos\GestionCursosNet\Debug\GestionCursosNet.exe

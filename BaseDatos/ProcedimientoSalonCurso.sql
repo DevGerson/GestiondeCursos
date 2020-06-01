@@ -59,4 +59,11 @@ BEGIN
 END
 // DELIMITER ;
 
+DELIMITER //
+CREATE VIEW v_asg_salon_curso
+AS
+SELECT sc.cod_salon_curso,c.curso,tp.tipocurso FROM asg_salon_curso AS sc INNER JOIN pg_curso AS c ON sc.cod_curso = c.cod_curso 
+INNER JOIN pg_tipocurso AS tp ON tp.cod_tipocurso = c.cod_tipocurso
+// DELIMITER ;
+
 

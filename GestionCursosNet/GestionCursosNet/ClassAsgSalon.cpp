@@ -40,7 +40,7 @@ DataTable^ ClassAsgSalon::Vista()
 {
 	CConexion^ Trans = gcnew CConexion(CnnString);
 	String^ parametros = Convert::ToString(cod_salon_curso);
-	return Trans->Consulta("CALL sp_v_sel_asg_salon_curso (" + parametros + ")");
+	return Trans->Consulta("SELECT * FROM v_asg_salon_curso");
 }
 
 bool ClassAsgSalon::Obtener()

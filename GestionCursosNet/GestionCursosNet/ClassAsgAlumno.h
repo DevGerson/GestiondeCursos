@@ -20,6 +20,9 @@ public:
 	bool Obtener();
 	DataTable^ Buscar();
 	DataTable^ Vista();
+	DataTable^ VistaAlumno();
+	DataTable^ VistaAll();
+	DataTable^ VistaGrid();
 	DataTable^ Reporte(String^ nombre);
 
 private:

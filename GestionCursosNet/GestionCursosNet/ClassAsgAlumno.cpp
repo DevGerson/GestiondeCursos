@@ -43,6 +43,25 @@ DataTable^ ClassAsgAlumno::Vista()
 	return Trans->Consulta("CALL sp_v_sel_asg_alumno (" + parametros + ")");
 }
 
+DataTable^ ClassAsgAlumno::VistaAlumno()
+{
+	CConexion^ Trans = gcnew CConexion(CnnString);
+	String^ parametros = Convert::ToString(cod_salon_curso) + "," + Convert::ToString(cod_alumno);
+	return Trans->Consulta("SELECT * FROM v_asg_alumno WHERE cod_alumno = "+ cod_alumno +"");
+}
+
+DataTable^ ClassAsgAlumno::VistaAll()
+{
+	CConexion^ Trans = gcnew CConexion(CnnString);
+	return Trans->Consulta("SELECT * FROM v_asg_alumno");
+}
+
+DataTable^ ClassAsgAlumno::VistaGrid()
+{
+	CConexion^ Trans = gcnew CConexion(CnnString);
+	return Trans->Consulta("select tipocurso,curso,nombre,salon from  v_asg_alumno ");
+}
+
 bool ClassAsgAlumno::Obtener()
 {
 	CConexion^ Trans = gcnew CConexion(CnnString);

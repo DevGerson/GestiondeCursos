@@ -138,6 +138,12 @@
     <ClCompile Include="ReporteAsgSalon.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="ExpCalificacion.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassCalificacion.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FrmPrincipal.h">
@@ -263,6 +269,12 @@
     <ClInclude Include="ReporteAsgSalon.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="ExpCalificacion.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassCalificacion.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FrmPrincipal.resx">
@@ -323,6 +335,9 @@
       <Filter>Archivos de recursos</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteTipoCurso.resx">
+      <Filter>Archivos de recursos</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteAsgAlumno.resx">
       <Filter>Archivos de recursos</Filter>
     </EmbeddedResource>
   </ItemGroup>

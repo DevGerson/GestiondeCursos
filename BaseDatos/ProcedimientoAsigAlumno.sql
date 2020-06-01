@@ -56,7 +56,7 @@ AS
 SELECT sc.cod_salon_curso,asg.cod_alumno,exp.nombre,sl.salon,c.curso,tp.tipocurso,cc.centrocosto,dp.departamento 
 FROM asg_alumno AS asg 
 INNER JOIN asg_salon_curso AS sc ON asg.cod_salon_curso = sc.cod_salon_curso 
-INNER JOIN pg_salon AS sl ON sl.cod_salon = sc.cod_salon exp_calificacion
+INNER JOIN pg_salon AS sl ON sl.cod_salon = sc.cod_salon 
 INNER JOIN pg_curso AS c ON c.cod_curso = sc.cod_curso
 INNER JOIN pg_tipocurso AS tp ON tp.cod_tipocurso = c.cod_tipocurso
 INNER JOIN pg_centrocosto AS cc ON cc.cod_centrocosto = sl.cod_centrocosto

@@ -3,8 +3,9 @@
 #include "AsigAlumnos.h"
 #include "AsigCatedraticos.h"
 #include "AsigSalones.h"
+#include "ExpCalificacion.h"
 
-namespace GestionCursosNet 
+namespace GestionCursosNet
 {
 
 	using namespace System;
@@ -54,6 +55,9 @@ namespace GestionCursosNet
 	private: System::Windows::Forms::Label^  label4;
 	private: Bunifu::Framework::UI::BunifuImageButton^  btnSalon;
 	private: Bunifu::Framework::UI::BunifuElipse^  bunifuElipse1;
+	private: System::Windows::Forms::Label^  label5;
+	private: Bunifu::Framework::UI::BunifuImageButton^  btn_calificacion;
+	private: Bunifu::Framework::UI::BunifuElipse^  EpCalificaion;
 
 	private: System::ComponentModel::IContainer^  components;
 
@@ -83,9 +87,13 @@ namespace GestionCursosNet
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->btnSalon = (gcnew Bunifu::Framework::UI::BunifuImageButton());
 			this->bunifuElipse1 = (gcnew Bunifu::Framework::UI::BunifuElipse(this->components));
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->btn_calificacion = (gcnew Bunifu::Framework::UI::BunifuImageButton());
+			this->EpCalificaion = (gcnew Bunifu::Framework::UI::BunifuElipse(this->components));
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->btnCatedratico))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->btnAlumno))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->btnSalon))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->btn_calificacion))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// EpForm
@@ -207,12 +215,48 @@ namespace GestionCursosNet
 			this->bunifuElipse1->ElipseRadius = 10;
 			this->bunifuElipse1->TargetControl = this->btnSalon;
 			// 
+			// label5
+			// 
+			this->label5->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(95)), static_cast<System::Int32>(static_cast<System::Byte>(103)),
+				static_cast<System::Int32>(static_cast<System::Byte>(105)));
+			this->label5->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label5->ForeColor = System::Drawing::Color::White;
+			this->label5->Location = System::Drawing::Point(697, 278);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(125, 21);
+			this->label5->TabIndex = 8;
+			this->label5->Text = L"Calificacion";
+			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// btn_calificacion
+			// 
+			this->btn_calificacion->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(95)), static_cast<System::Int32>(static_cast<System::Byte>(103)),
+				static_cast<System::Int32>(static_cast<System::Byte>(105)));
+			this->btn_calificacion->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_calificacion.Image")));
+			this->btn_calificacion->ImageActive = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_calificacion.ImageActive")));
+			this->btn_calificacion->Location = System::Drawing::Point(684, 140);
+			this->btn_calificacion->Name = L"btn_calificacion";
+			this->btn_calificacion->Size = System::Drawing::Size(150, 170);
+			this->btn_calificacion->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
+			this->btn_calificacion->TabIndex = 7;
+			this->btn_calificacion->TabStop = false;
+			this->btn_calificacion->Zoom = 5;
+			this->btn_calificacion->Click += gcnew System::EventHandler(this, &AsigMenu::btn_calificacion_Click);
+			// 
+			// EpCalificaion
+			// 
+			this->EpCalificaion->ElipseRadius = 10;
+			this->EpCalificaion->TargetControl = this->btn_calificacion;
+			// 
 			// AsigMenu
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::White;
 			this->ClientSize = System::Drawing::Size(1154, 641);
+			this->Controls->Add(this->label5);
+			this->Controls->Add(this->btn_calificacion);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->btnSalon);
 			this->Controls->Add(this->label3);
@@ -226,6 +270,7 @@ namespace GestionCursosNet
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->btnCatedratico))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->btnAlumno))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->btnSalon))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->btn_calificacion))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -235,20 +280,25 @@ namespace GestionCursosNet
 #pragma region Botones
 
 
-		private: System::Void btnAlumno_Click(System::Object^  sender, System::EventArgs^  e) {
-			AsigAlumnos^ asigAlumno = gcnew AsigAlumnos(cnnstring);
-			asigAlumno->Show();
-		}
-		private: System::Void btnCatedratico_Click(System::Object^  sender, System::EventArgs^  e) {
-			AsigCatedraticos^ asigCatedratico = gcnew AsigCatedraticos(cnnstring);
-			asigCatedratico->Show();
-		}
-		private: System::Void btnSalon_Click(System::Object^  sender, System::EventArgs^  e) {
-			AsigSalones^ asigSalon = gcnew AsigSalones(cnnstring);
-			asigSalon->Show();
-		}
-
+	private: System::Void btnAlumno_Click(System::Object^  sender, System::EventArgs^  e) {
+		AsigAlumnos^ asigAlumno = gcnew AsigAlumnos(cnnstring);
+		asigAlumno->Show();
+	}
+	private: System::Void btnCatedratico_Click(System::Object^  sender, System::EventArgs^  e) {
+		AsigCatedraticos^ asigCatedratico = gcnew AsigCatedraticos(cnnstring);
+		asigCatedratico->Show();
+	}
+	private: System::Void btnSalon_Click(System::Object^  sender, System::EventArgs^  e) {
+		AsigSalones^ asigSalon = gcnew AsigSalones(cnnstring);
+		asigSalon->Show();
+	}
+	private: System::Void btn_calificacion_Click(System::Object^  sender, System::EventArgs^  e) 
+	{
+		ExpCalificacion^ expCalificacion = gcnew ExpCalificacion(cnnstring);
+		expCalificacion->Show();
+	}
 #pragma endregion
+
 
 
 

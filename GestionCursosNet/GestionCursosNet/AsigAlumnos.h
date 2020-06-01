@@ -284,11 +284,9 @@ namespace GestionCursosNet {
 	}
 	private: void CargarComboSalon()
 	{
-		ClassAsgSalon^ Salon = gcnew ClassAsgSalon(cnnstring);
-		Salon->cod_salon = 0;
-
-		cmb_salon->DataSource = Salon->Buscar();
-		cmb_salon->DisplayMember = "cod_salon_curso";
+		ClassAsgAlumno^ asgSalon = gcnew ClassAsgAlumno(cnnstring);
+		cmb_salon->DataSource = asgSalon->VistaAll();
+		cmb_salon->DisplayMember = "curso";
 		cmb_salon->ValueMember = "cod_salon_curso";
 	}
 	private: void CargarComboAlumno()
@@ -303,10 +301,8 @@ namespace GestionCursosNet {
 	private: void CargarGrid()
 	{
 		ClassAsgAlumno^ AsgAlumno = gcnew ClassAsgAlumno(cnnstring);
-		AsgAlumno->cod_salon_curso = 0;
-		AsgAlumno->cod_alumno = 0;
-		gv_datos->DataSource = AsgAlumno->Vista();
-		PersonalizacionGrid();
+		gv_datos->DataSource = AsgAlumno->VistaGrid();
+		//PersonalizacionGrid();
 	}
 	private: void PersonalizacionGrid()
 	{
